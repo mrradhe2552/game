@@ -13,108 +13,142 @@
 
   <title>LAMA GAMES</title>
 
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+  </script>
+
 </head>
 
 <body>
-  <div class="container has-background-light-white">
-    <header class="navbar has-background-dark">
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <div class="container m-3 ">
-            <div class="logo">
-              <a href="#">
-                <h1 class="has-text-weight-bold has-text-success is-size-3">LAMA GAMES</h1>
-              </a>
+    
+  <nav class="navbar has-background-link-light" role="navigation" aria-label="main navigation">
 
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="/game/laaama.jpeg" class="" style="max-height: 25px;">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+   
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Review
+          </a>
+          <a class="navbar-item">
+            News
+          </a>
+          <a class="navbar-item">
+            Gallery
+          </a>
+          <a class="navbar-item">
+            Blog
+          </a>
+          <a class="navbar-item">
+            Content
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">MOST ADDICTING GAMES MORE NEW AND
+      ADDICTING
+      GAMES</h1>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+
+              <img src="img1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <div class="content">
+                <img src="img2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <div class="content">
+                <img src="img21.jpg" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
-  <!-- </div> -->
-
-  <div class="navbar-end ">
-    <a href="#" class="navbar-item has-text-white">Home</a>
-    <a href="#" class="navbar-item has-text-white">Review</a>
-    <a href="#" class="navbar-item has-text-white">News</a>
-    <a href="#" class="navbar-item has-text-white">Gallery</a>
-    <a href="#" class="navbar-item has-text-white">Blog</a>
-    <a href="#" class="navbar-item has-text-white">Contect</a>
-  </div>
-  </header>
-  <section class="section has-background-white">
-    <button class="m-4 button is-small is-dark is-rounded">Adventure</button>
-    <button class="m-4 button is-small is-dark is-rounded">Arcade</button>
-    <button class="m-4 button is-small is-dark is-rounded">Arena</button>
-    <button class="m-4 button is-small is-dark is-rounded">Avoider</button>
-    <button class="m-4 button is-small is-dark is-rounded">Balance</button>
-    <button class="m-4 button is-small is-dark is-rounded">Block</button>
-    <button class="m-4 button is-small is-dark is-rounded">More Categories</button>
-  </section>
-  <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">MOST ADDICTING GAMES MORE NEW AND ADDICTING
-    GAMES</h1>
-     <div class="container">
-    <div class="columns">
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-        
-          <img src="img1.jpg" alt="">
-           </div> 
-        </div>
-      </div>
     
-
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-          <div class="content">
-          <img src="img2.jpg" alt="">
-          </div> 
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-           <div class="content"> 
-          <img src="img21.jpg" alt="">
-           </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-   <div class="columns">
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-          <div class="content">
-            <img src="img4.jpg" alt="">
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <div class="content">
+              <img src="img4.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="card">
-        <div class="card-contrnt">
-          <div class="content">
-            <img src="img5.jpg" alt="">
+      <div class="column">
+        <div class="card">
+          <div class="card-contrnt">
+            <div class="content">
+              <img src="img5.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="card">
-        <div class="card-contrnt">
-          <div class="content">
-            <img src="img6.jpg" alt="">
+      <div class="column">
+        <div class="card">
+          <div class="card-contrnt">
+            <div class="content">
+              <img src="img6.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div> 
-  </div>
-   <hr />
+  <hr />
   <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">NEW GAMES THIS WEEK</h1>
   <div class="container has-background-light-white">
     <div class="columns">
@@ -147,7 +181,7 @@
       </div>
     </div>
   </div>
-  <hr> 
+  <hr>
   <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">TRENDING GAMES</h1>
   <div class="container has-background-light-white">
     <div class="columns">
@@ -180,8 +214,8 @@
       </div>
     </div>
   </div>
-  <hr> 
-   <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">CLASSIC GAMES</h1>
+  <hr>
+  <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">CLASSIC GAMES</h1>
   <div class="container has-background-light-white">
     <div class="columns">
       <div class="column">
@@ -213,8 +247,8 @@
       </div>
     </div>
   </div>
-  <hr> 
-   <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">THE AG BLOG</h1>
+  <hr>
+  <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-dark">THE AG BLOG</h1>
   <div class="container has-background-light-white">
     <div class="columns">
       <div class="column">
@@ -265,8 +299,8 @@
         </div>
       </div>
     </div>
-  </div> 
-   <hr>
+  </div>
+  <hr>
   <div class="container">
     <div class="navbar-centered  has-background-warning">
       <div class="container m-2 has-text-centered">
@@ -293,11 +327,11 @@
     <footer>
       Copyright &copy; 2023 Lama Games, Inc.
     </footer>
-  </div> 
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> 
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cwarningloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+</script>
+
+
+
+
+
+    
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="/game/laaama.jpeg" class="" style="max-height: 25px;">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+   
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Review
+          </a>
+          <a class="navbar-item">
+            News
+          </a>
+          <a class="navbar-item">
+            Gallery
+          </a>
+          <a class="navbar-item">
+            Blog
+          </a>
+          <a class="navbar-item">
+            Content
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+
